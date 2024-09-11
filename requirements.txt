@@ -1,0 +1,9 @@
+streamlit
+torch
+torchvision
+Pillow
+requests
+numpy
+opencv-python
+folium
+streamlit-folium
