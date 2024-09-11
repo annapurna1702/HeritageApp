@@ -121,9 +121,10 @@ if app_mode == "Location-based Image Classification":
     lat, lon = get_location()
     lat=(lat-37.1087)+0.1309
     lon=(lon+198.2242)-0.0966
+    formatted_latitude = f"{lat:.4f}"
 
     if lat and lon:
-        st.write(f"Detected Location: Latitude {lat}, Longitude {lon}")
+        st.write(f"Detected Location: Latitude {formatted_latitude}, Longitude {lon}")
 
         # Check if near or in any important place
         in_place = False
