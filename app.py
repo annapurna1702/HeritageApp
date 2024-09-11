@@ -132,12 +132,12 @@ if app_mode == "Location-based Image Classification":
         for place in places:
             distance = haversine(lat, lon, place['lat'], place['lon'])
             if distance < 10000:  # Within 10 kilometers
-                st.success(f"You are **in** {place['name']}! Details: {place['details']}")
+                st.markdown(f'<div class="glass">You are in {place["name"]}! Details: {place["details"]}</div>', unsafe_allow_html=True)
                 in_place = True
                 nearest_place = place
                 break
             elif distance < 100000:  # Within 100 kilometers
-                st.markdown(f'<div class="glass">You are **near** {place["name"]}. Details: {place["details"]}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="glass">You are near {place["name"]}. Details: {place["details"]}</div>', unsafe_allow_html=True)
                 in_place = True
                 nearest_place = place
 
