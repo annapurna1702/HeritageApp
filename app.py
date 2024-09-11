@@ -137,7 +137,7 @@ if app_mode == "Location-based Image Classification":
                 nearest_place = place
                 break
             elif distance < 100000:  # Within 100 kilometers
-                st.warning(f"You are **near** {place['name']}. Details: {place['details']}")
+                st.success(f"You are **near** {place['name']}. Details: {place['details']}")
                 in_place = True
                 nearest_place = place
 
