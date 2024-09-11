@@ -3,7 +3,6 @@ torch
 torchvision
 Pillow
 requests
-numpy
-opencv-python
+numpy<2
+opencv-python-headless
 folium
-streamlit-folium
