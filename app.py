@@ -36,7 +36,7 @@ places = [
     {"name": "Park", "lat": 48.856613, "lon": 2.352222, "details": "The Park has beautiful gardens and walking paths."},
     {"name": "Digital University of Kerala", "lat": 8.6164, "lon": 76.8526, "details": "Digital University of Kerala is a premier institution for digital technology and innovation."}
 ]
-with open("style.css") as f:
+with open("styles.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 # Function to get location from external API
 def get_location():
