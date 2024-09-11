@@ -116,7 +116,8 @@ st.sidebar.title("Navigation")
 app_mode = st.sidebar.selectbox("Choose the app mode", ["Location-based Image Classification", "Expert Session Booking", "Expert Login"])
 
 if app_mode == "Location-based Image Classification":
-    st.title("Location-based Image Classification App")
+    st.title("Artifact Explorer")
+    st.info("Discover Stories Behind Every Artifact!")
 
     # Get location automatically
     lat, lon = get_location()
