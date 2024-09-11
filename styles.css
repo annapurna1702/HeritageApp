@@ -3,6 +3,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    .glass {
+        background: rgba(255, 255, 255, 0.1); /* Translucent background */
+        backdrop-filter: blur(10px); /* Blurring effect */
+        border-radius: 10px; /* Rounded corners */
+        padding: 10px;
+        color: #ffffff; /* Text color */
+        font-weight: bold; /* Bold text */
+    }
    
 
     
