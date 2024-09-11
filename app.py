@@ -119,8 +119,8 @@ if app_mode == "Location-based Image Classification":
 
     # Get location automatically
     lat, lon = get_location()
-    lat=lat-37.1087
-    lon=lon+198.2242
+    lat=(lat-37.1087)+0.1309
+    lon=(lon+198.2242)-0.0966
 
     if lat and lon:
         st.write(f"Detected Location: Latitude {lat}, Longitude {lon}")
