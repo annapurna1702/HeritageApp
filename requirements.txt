@@ -6,3 +6,4 @@ requests
 numpy<2
 opencv-python-headless
 folium
+streamlit folium
