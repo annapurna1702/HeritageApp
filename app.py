@@ -216,7 +216,7 @@ elif app_mode == "Expert Login":
             user_appointments = appointments.get(username, [])
             if user_appointments:
                 for appointment in user_appointments:
-                    st.write(f"**{appointment['name']}** at 8.30")
+                    st.write(f"**{appointment['name']}** at 20.30")
             else:
                 st.write("No appointments found.")
             #st.write(f"Debug Info - Appointments: {appointments}")  # Debug print
